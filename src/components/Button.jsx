@@ -1,3 +1,5 @@
+import React from "react";
+
 const Button = ({ handleClick, children }) => {
   console.log(`Rendering ${children}`);
 
@@ -10,4 +12,4 @@ const Button = ({ handleClick, children }) => {
   );
 };
 
-export default Button;
+export default React.memo(Button);
