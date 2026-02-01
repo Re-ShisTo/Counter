@@ -1,6 +1,6 @@
 # Counter
 
-## Purpose: To learn react optimixation, useMemo, useCallback, hooks, redux in profound manner.
+## Purpose: To learn react optimization, useMemo, useCallback and Custom Hooks in profound manner.
 
 - [Memoization]()is an optimization technique in React for improving performance by caching expensive results or components to avoid unnecessary re-renders and recalculations. It trades memory for speed and is implemented using specific hooks and Higher-Order Components (HOCs).
 

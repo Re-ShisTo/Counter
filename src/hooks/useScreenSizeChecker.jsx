@@ -17,6 +17,11 @@ const useScreenSizeChecker = (threshold) => {
     checkScreenSize();
 
     window.addEventListener("resize", checkScreenSize);
+
+    //clean up function
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
   }, [threshold]);
 
   return onSmallScreen;
