@@ -2,6 +2,8 @@ import { useCallback, useMemo, useState } from "react";
 import Title from "./components/Title";
 import ShowCount from "./components/ShowCount";
 import Button from "./components/Button";
+import LayoutOne from "./components/LayoutOne";
+import LayoutTwo from "./components/LayoutTwo";
 
 const App = () => {
   const [count1, setCount1] = useState(0);
@@ -18,7 +20,7 @@ const App = () => {
     // fake epensive operation
     // It will load for a while to decrease the load time uyou can remove on zero in the while loop.
     let i = 0;
-    while (i <= 10000000000) {
+    while (i <= 1000000000) {
       i++;
     }
 
@@ -34,6 +36,11 @@ const App = () => {
       <hr />
       <ShowCount count={count2} title="Counter 2" />
       <Button handleClick={increamentByFive}>Increament By Five</Button>
+      <hr />
+      {/* Custom Hooks */}
+      <hr />
+      <LayoutOne />
+      <LayoutTwo />
     </div>
   );
 };
