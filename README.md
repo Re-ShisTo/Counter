@@ -10,4 +10,6 @@
 
 - Used [useMemo]() to memoize a return result of a funtion.
 
+- Created a Custom Hook and passed props through the hook. Learned the basics of using a hook.
+
 - I am applying [useCallback]() and [useMemo]() here not because of any 'Performance Obsession' or 'Obsessive-Compulsive Disorder'. It is simply for [Learning]() purpose.
