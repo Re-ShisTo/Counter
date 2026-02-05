@@ -1,15 +1,16 @@
 import React from "react";
 
-const Button = ({ handleClick, children }) => {
-  console.log(`Rendering ${children}`);
+const Button = ({ children, type, handler }) => {
+  const style =
+    type === "danger"
+      ? "bg-red-500 text-white px-3 py-2 rounded shadow"
+      : "bg-blue-500 text-white px-3 py-2 rounded shadow";
 
   return (
-    <p>
-      <button type="button" onClick={handleClick}>
-        {children}
-      </button>
-    </p>
+    <button className={style} onClick={handler}>
+      {children}
+    </button>
   );
 };
 
-export default React.memo(Button);
+export default Button;
